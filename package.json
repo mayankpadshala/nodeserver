@@ -1,0 +1,32 @@
+{
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "Node Express Server Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "start": "cross-env NODE_ENV=production npx pm2 start index.js",
+    "stop": "npx pm2 stop index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayankpadshala/nodeserver.git"
+  },
+  "author": "Mayank Padshala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayankpadshala/nodeserver/issues"
+  },
+  "homepage": "https://github.com/mayankpadshala/nodeserver#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
